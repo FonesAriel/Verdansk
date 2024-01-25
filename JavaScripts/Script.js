@@ -23,3 +23,20 @@ document.addEventListener("click", (e) => {
         body.classList.remove("prevent-background-scroll");
     }
 });
+
+// Selecciona la imagen y el contenedor
+var beerImage = document.getElementById('beer-image');
+var beerContainer = document.getElementById('beer-container');
+
+// Agrega un evento al contenedor para manejar el clic
+beerContainer.addEventListener('click', function () {
+    // Verifica si la imagen tiene la clase 'expanded'
+    var isExpanded = beerImage.classList.contains('expanded');
+
+    // Si está expandida, la contrae; si no, la expande
+    if (isExpanded) {
+        beerImage.classList.remove('expanded');
+    } else {
+        beerImage.classList.add('expanded');
+    }
+});
