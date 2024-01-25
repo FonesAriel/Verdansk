@@ -27,7 +27,22 @@ body {
     background-repeat: no-repeat;
 }
 
+
 /* ------ */
+
+.visit-counter {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+#visit-counter {
+    text-align: center;
+}
+
 /* INTRO */
 
 #intro {

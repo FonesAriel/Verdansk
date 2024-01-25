@@ -40,3 +40,16 @@ beerContainer.addEventListener('click', function () {
         beerImage.classList.add('expanded');
     }
 });
+
+// Recuperar el contador actual desde el almacenamiento local
+var visitCount = localStorage.getItem('visitCount') || 0;
+
+// Incrementar el contador
+visitCount++;
+
+// Mostrar el contador en la página
+var visitCounterElement = document.getElementById('visit-counter');
+visitCounterElement.innerHTML = '<p>Visita número: ' + visitCount + '</p>';
+
+// Guardar el nuevo contador en el almacenamiento local
+localStorage.setItem('visitCount', visitCount);
